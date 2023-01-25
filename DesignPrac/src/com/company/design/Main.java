@@ -1,51 +1,23 @@
 package com.company.design;
 
-
-import com.company.design.proxy.*;
-
-import java.util.concurrent.atomic.AtomicLong;
-import com.company.design.app.AppBrowser;
-
-
+import com.company.design.decorator.*;
 
 public class Main {
 
     public static void main(String[] args){
 
-        /*
-        Browser browser = new Browser("www.naver.com");
+        ICar audi = new Audi(1000);
+        audi.showPrice();
 
-        browser.show();
-        browser.show();
-        browser.show();
+        ICar A3 = new A3(audi, "A3");
+        A3.showPrice();;
 
-        System.out.println("-Proxy chase-");
+        ICar A4 = new A4(audi, "A4");
+        A4.showPrice();
 
-        iBrowser proxy = new browserProxy("www.naver.com");
-        proxy.show();
-        proxy.show();
-        proxy.show();
-        proxy.show();
-        */
+        ICar A5 = new A5(audi, "A5");
+        A5.showPrice();
 
-        AtomicLong start = new AtomicLong();
-        AtomicLong end = new AtomicLong();
-
-        AppBrowser app = new AppBrowser("www.naver.com",
-                ()->{
-                    System.out.println(" - BEFORE -");
-                    start.set(System.currentTimeMillis());
-                },
-                ()->{
-                    long now = System.currentTimeMillis();
-                    end.set(now - start.get());
-                }
-        );
-
-        app.show();
-        System.out.println("loading time : " + end.get());
-        app.show();
-        System.out.println("loading time : " + end.get());
 
 
     }

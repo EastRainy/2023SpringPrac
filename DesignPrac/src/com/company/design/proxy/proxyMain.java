@@ -6,7 +6,7 @@ import java.util.concurrent.atomic.AtomicLong;
 
 public class proxyMain {
 
-    public static void proxyMain(String[] args){
+    public void proxyMain(String[] args){
 
 
         Browser browser = new Browser("www.naver.com");
