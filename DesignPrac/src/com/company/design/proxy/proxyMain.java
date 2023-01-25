@@ -1,18 +1,14 @@
-package com.company.design;
+package com.company.design.proxy;
 
-
-import com.company.design.proxy.*;
-
-import java.util.concurrent.atomic.AtomicLong;
 import com.company.design.app.AppBrowser;
 
+import java.util.concurrent.atomic.AtomicLong;
+
+public class proxyMain {
+
+    public static void proxyMain(String[] args){
 
 
-public class Main {
-
-    public static void main(String[] args){
-
-        /*
         Browser browser = new Browser("www.naver.com");
 
         browser.show();
@@ -26,7 +22,7 @@ public class Main {
         proxy.show();
         proxy.show();
         proxy.show();
-        */
+
 
         AtomicLong start = new AtomicLong();
         AtomicLong end = new AtomicLong();
@@ -49,4 +45,6 @@ public class Main {
 
 
     }
+
+
 }
