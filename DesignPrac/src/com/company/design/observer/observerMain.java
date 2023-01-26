@@ -1,12 +1,8 @@
-package com.company.design;
+package com.company.design.observer;
 
-import com.company.design.decorator.*;
-import com.company.design.observer.Button;
-import com.company.design.observer.IButtonListener;
+public class observerMain {
 
-public class Main {
-
-    public static void main(String[] args){
+    public void observerMain(){
 
         Button b = new Button("버튼");
 
