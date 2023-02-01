@@ -1,10 +1,8 @@
-package com.company.design;
+package com.company.design.facade;
 
-import com.company.design.facade.*;
+public class facadeMain {
 
-public class Main {
-
-    public static void main(String[] args){
+    public facadeMain(){
 
         sftpClient client = new sftpClient("www.naver.com", 22, "/home/", "text.tmp");
 
@@ -15,6 +13,7 @@ public class Main {
 
 
         client.disConnect();
+
 
 
     }
