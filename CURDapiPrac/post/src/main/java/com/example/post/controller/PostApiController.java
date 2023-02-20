@@ -22,6 +22,7 @@ public class PostApiController {
 }
 
 /*
+테스트 JSON데이터 형식
 {
     "account" : "user01",
     "email" : "test@gmail.com",
